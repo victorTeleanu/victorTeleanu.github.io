@@ -1,0 +1,113 @@
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #535353;
+}
+
+section {
+    padding: 20px;
+}
+
+/* Estilos específicos para el formulario de opinión */
+
+form {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+} 
+
+/* Estilos específicos para los vídeos embebidos */
+
+iframe {
+    width: auto;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+/* Estilos específicos para la lista de destinos */
+
+dl {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+}
+
+dt {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+dd {
+    margin-top: 10px;
+}
+
+/* Estilos específicos para las imágenes */
+
+img {
+    max-width: 300px;
+    height: 200px;
+    border-radius: 5px;
+}
