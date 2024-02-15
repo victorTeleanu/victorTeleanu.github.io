@@ -1,10 +1,13 @@
 /* Estilos generales */
 
 body {
+    background-image: url(Archivos/background_img.jpg);
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
     text-align: justify;
+    min-height: 125vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -17,9 +20,8 @@ footer {
     background-color: #333;
     color: #fff;
     padding: 15px;
-    position: relative;
-    bottom: 0;
     left: 0;
+    margin: 0;
 }
 
 nav ul {
@@ -39,11 +41,11 @@ a {
 }
 
 a:hover {
-    color: #535353;
+    color: #9e9e9e;
 }
 
 section {
-    padding: 20px;
+    padding: 30px;
 }
 
 /* Estilos específicos para el formulario de opinión */
@@ -110,4 +112,79 @@ img {
     max-width: 300px;
     height: 200px;
     border-radius: 5px;
+}
+
+.img_rss {
+    padding-right: 30px;
+    float: right;
+    width: 50px;
+    height: 50px;
+}
+
+.gallery {
+    background-color: white;
+    border-style: solid;
+    border-color: #333;
+    margin: 50px;
+    padding: 40px;
+    width: 180px;
+}
+.gallery h3{
+    text-align: center;
+    min-height: 40px;
+}
+
+  
+.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.img_gallery {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+
+}
+.gallery img{
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    flex: 1;
+}
+
+table, th, td{
+    border: 2px solid;
+    border-collapse: collapse;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.top a{
+    color: blue;
+}
+
+.top a:hover {
+    color: rgb(144, 144, 254);
+}
+
+.tabla-destinos {
+    background-color: white;
+}
+
+.tabla-destinos a{
+    color: violet;
+}
+
+.tabla-destinos a:hover{
+    color: rgb(239, 180, 239);
+}
+
+.titulo, .funcionamiento{
+    background-color: white;
 }
