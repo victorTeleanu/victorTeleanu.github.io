@@ -53,6 +53,11 @@ section {
 form {
     max-width: 700px;
     margin: 0 auto;
+    background-color: white;
+    border-style: solid;
+    border-radius: 2%;
+    border-color: #333;
+    padding: 5%;
 }
 
 label {
@@ -81,15 +86,11 @@ input[type="submit"]:hover {
     background-color: #555;
 } 
 
-/* Estilos específicos para los vídeos embebidos */
-
 iframe {
     width: auto;
     height: 200px;
     margin-bottom: 20px;
 }
-
-/* Estilos específicos para la lista de destinos */
 
 dl {
     display: grid;
@@ -105,8 +106,6 @@ dt {
 dd {
     margin-top: 10px;
 }
-
-/* Estilos específicos para las imágenes */
 
 img {
     max-width: 300px;
@@ -124,6 +123,7 @@ img {
 .gallery {
     background-color: white;
     border-style: solid;
+    border-radius: 12px;
     border-color: #333;
     margin: 50px;
     padding: 40px;
@@ -145,7 +145,6 @@ img {
     align-items: center;
     display: flex;
     flex-direction: row;
-
 }
 .gallery img{
     margin: 0;
@@ -165,6 +164,15 @@ table, th, td{
     text-align: center;
 }
 
+.tabla {
+    margin: 0 auto;
+    width: 75%;
+}
+
+.top {
+    background-color: white;
+}
+
 .top a{
     color: blue;
 }
@@ -175,6 +183,7 @@ table, th, td{
 
 .tabla-destinos {
     background-color: white;
+    text-align: center;
 }
 
 .tabla-destinos a{
@@ -188,3 +197,26 @@ table, th, td{
 .titulo, .funcionamiento{
     background-color: white;
 }
+
+dd, dt, .destinos {
+    background-color: white;
+    padding: 2%;
+    border-style: solid;
+    border-radius: 12px;
+    border-color: #333;
+}
+dt{
+    font-weight: bold;
+}
+dl div{
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+dd {
+    width: 30%;
+}
+
+
+
