@@ -1,0 +1,258 @@
+html {
+    font-family:cursive;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display:flex;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+section.titulo {
+    background-color: #ffc107;
+    padding: 20px;
+    text-align: center;
+}
+
+section.img_gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.gallery {
+    text-align: center;
+}
+
+.gallery img {
+    width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.gallery h3 {
+    color: #007bff;
+}
+
+.tabla-destinos {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.tabla {
+    margin: 0 auto;
+}
+
+.tabla table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla table th, .tabla table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.tabla table th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.tabla table td a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.tabla table td a:hover {
+    text-decoration: underline;
+}
+
+.funcionamiento {
+    background-color: #ffc107;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.img_rss {
+    padding-right: 30px;
+    float: right;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+
+
+
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form h1 {
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form select {
+    cursor: pointer;
+}
+
+form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+/* Estilos para la sección de destinos */
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+.destinos {
+    color: #007bff;
+}
+
+dl {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+dl dt {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #007bff;
+}
+
+dl dd {
+    margin-bottom: 40px;
+}
+
+dl dd h3 {
+    color: #333;
+}
+
+dl dd p {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Estilos para el top 5 de viajes */
+
+.top {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.top h2 {
+    color: #007bff;
+}
+
+ol {
+    list-style: none;
+    padding: 0;
+}
+
+ol li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+ol li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+ol li a:hover {
+    text-decoration: underline;
+}

@@ -3,18 +3,16 @@
     <channel>
         <title>Últimas horas en viajes</title>
         <link>https://github.com/victorTeleanu</link>
-        <description>Aquí habrán noticias sobre viajes</description>
+        <description>Últimas noticias sobre viajes</description>
         <item>
             <title>Destinos más comunes para viajar</title>
-            <link></link>
-            <description></description>
-            <img></img>
+            <link>https://victorteleanu.github.io/Web%20LM/destinos.html</link>
+            <description>Los sitios más elegidos por la gente</description>
         <item>
         <item>
             <title>Top 5 viajes</title>
-            <link></link>
-            <description></description>
-            <img></img>
+            <link>https://victorteleanu.github.io/Web%20LM/destinos.html</link>
+            <description>Nuestra selección de los 5 mejores viajes para hacer</description>
         <item>
     </channel>
 </rss>
