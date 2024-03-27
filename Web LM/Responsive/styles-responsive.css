@@ -228,6 +228,9 @@ dd {
         display: block;
         margin: 10px 0;
     }
+    .img_gallery {
+        font-size: 20px;
+    }
 
     .gallery {
         margin: 20px auto;
@@ -249,6 +252,11 @@ dd {
         width: 90%;
         margin: 20px auto;
         overflow-x: auto;
+        font-size: 20px;
+    }
+
+    .tabla-destinos h2, th, td {
+        font-size: 20px;
     }
     
 }
