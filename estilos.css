@@ -1,0 +1,98 @@
+body {
+    background-color: #000000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: large;
+}
+
+.contenedor {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 5px 0 0;
+}
+
+section {
+    padding: 40px 0;
+    text-align: justify;
+}
+h1 {
+    font-size: 30px;
+    color: #b055fa;
+}
+h2 {
+    color: #b055fa;
+}
+
+.subtitulo {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: small;
+}
+
+.contenedor-imagenes {
+    position: fixed;
+    top: 10px;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.GitHub, .Linkedin, .home {
+    margin-right: 10px;
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pfp {
+    width: 140px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 100%;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: #d59def;
+}
+
+.idiomas {
+    font-size: larger;
+    color: white;
+}
