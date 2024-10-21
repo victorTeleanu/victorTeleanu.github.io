@@ -13,7 +13,7 @@ body {
     margin: auto;
 }
 
-header {
+/*header {
     background-color: #000000;
     color: #fff;
     padding: 20px 0;
@@ -26,7 +26,7 @@ header h1 {
 
 header p {
     margin: 5px 0 0;
-}
+}*/
 
 section {
     padding: 40px 0;
@@ -44,7 +44,7 @@ h2 {
     font-weight: bold;
 }
 
-footer {
+/* footer {
     background-color: #000000;
     color: #fff;
     text-align: center;
@@ -53,6 +53,18 @@ footer {
     bottom: 0;
     width: 100%;
     font-size: small;
+
+}*/
+header, footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer {
+    font-size: small;
+    margin-top: auto;
 }
 
 .contenedor-imagenes {
@@ -90,6 +102,7 @@ footer {
 
 a {
     color: #d59def;
+    text-decoration: none;
 }
 
 .idiomas {
