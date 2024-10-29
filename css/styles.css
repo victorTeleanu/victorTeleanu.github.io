@@ -1,65 +1,33 @@
-body {
-    background-color: #000000;
+html {
+    background-color: #ffffff;
+    color: #000000;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #fff;
+}
+
+/* Global Styles - Light Mode (Default) */
+body {
+    /*background-color: #ffffff;*/
+    /*font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
+    /*color: #000000;*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: large;
+    /* transition: background-color 0.5s ease-in; */
 }
 
+/* Container */
 .contenedor {
     width: 80%;
     margin: auto;
 }
 
-/*header {
-    background-color: #000000;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-}
-
-header p {
-    margin: 5px 0 0;
-}*/
-
-section {
-    padding: 40px 0;
-    text-align: justify;
-}
-h1 {
-    font-size: 30px;
-    color: #b055fa;
-}
-h2 {
-    color: #b055fa;
-}
-
-.subtitulo {
-    font-weight: bold;
-}
-
-/* footer {
-    background-color: #000000;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    font-size: small;
-
-}*/
+/* Header and Footer - Light Mode */
 header, footer {
-    background-color: #000000;
-    color: #fff;
+    color: #000000;
     text-align: center;
     padding: 1rem;
+    background-color: inherit;
 }
 
 footer {
@@ -67,6 +35,60 @@ footer {
     margin-top: auto;
 }
 
+/* Headings - Light Mode */
+h1, h2, .subtitulo {
+    font-size: 30px;
+    color: #0056b3; /* Azul para títulos y subtítulos en modo claro */
+}
+
+.subtitulo {
+    font-weight: bold;
+    color: #0056b3; /* Azul para subtítulos en modo claro */
+}
+
+/* Dark Mode Styles */
+
+html.dark-mode {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+html.dark-mode footer {
+    color: #ffffff;
+}
+
+
+/* Headings - Dark Mode */
+html.dark-mode h1, html.dark-mode h2, html.dark-mode .subtitulo {
+    color: #b055fa; /* Morado para títulos y subtítulos en modo oscuro */
+}
+
+/* Section */
+section {
+    padding: 40px 0;
+    text-align: justify;
+}
+
+/* Links - Light Mode */
+a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #6c93ba;
+}
+
+/* Links - Dark Mode */
+html.dark-mode a {
+    color: #d59def;
+}
+
+html.dark-mode a:hover {
+    color: #b055fa;
+}
+
+/* Social Media Icons */
 .contenedor-imagenes {
     position: fixed;
     top: 10px;
@@ -82,10 +104,12 @@ footer {
     border-radius: 50%;
 }
 
+/* Intro Section */
 .intro {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px;
 }
 
 .pfp {
@@ -100,12 +124,13 @@ footer {
     flex-direction: column;
 }
 
-a {
-    color: #d59def;
-    text-decoration: none;
-}
-
+/* Idiomas Section - Light Mode */
 .idiomas {
     font-size: larger;
+    color: black;
+}
+
+/* Idiomas Section - Dark Mode */
+html.dark-mode .idiomas {
     color: white;
 }
