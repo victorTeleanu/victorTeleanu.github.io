@@ -104,6 +104,16 @@ html.dark-mode a:hover {
     border-radius: 50%;
 }
 
+.mode-icon {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
 /* Intro Section */
 .intro {
     display: flex;
