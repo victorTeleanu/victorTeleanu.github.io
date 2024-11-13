@@ -6,14 +6,10 @@ html {
 
 /* Global Styles - Light Mode (Default) */
 body {
-    /*background-color: #ffffff;*/
-    /*font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
-    /*color: #000000;*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: large;
-    /* transition: background-color 0.5s ease-in; */
 }
 
 /* Container */
@@ -47,7 +43,6 @@ h1, h2, .subtitulo {
 }
 
 /* Dark Mode Styles */
-
 html.dark-mode {
     background-color: #000000;
     color: #ffffff;
@@ -56,7 +51,6 @@ html.dark-mode {
 html.dark-mode footer {
     color: #ffffff;
 }
-
 
 /* Headings - Dark Mode */
 html.dark-mode h1, html.dark-mode h2, html.dark-mode .subtitulo {
@@ -117,21 +111,93 @@ html.dark-mode a:hover {
 /* Intro Section */
 .intro {
     display: flex;
+    flex-direction: column; /* Cambiado para alinear imagen y texto verticalmente */
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    text-align: center;
+    padding: 40px;
+}
+
+.pfp-container {
+    margin-bottom: 20px; /* Espacio entre la imagen y el texto */
 }
 
 .pfp {
-    width: 140px;
-    height: auto;
-    margin-right: 10px;
-    border-radius: 100%;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
 }
 
+/* Text Container */
 .text-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#title {
+    font-size: 36px; /* Estilo del título */
+}
+
+/* Typing Animation */
+#holder {
+    color: #0056b3;
+    font-size: 2rem;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    /*border-right: 3px solid #0056b3;*/
+    width: 0;
+    animation: typing 3s steps(30) 1s forwards/*, blink-caret 0.75s step-end infinite*/;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Subtitle */
+.subtitulo {
+    font-weight: bold;
+    color: #0056b3;
+}
+
+/* Links */
+a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #6c93ba;
+}
+
+/* Dark Mode Styles */
+html.dark-mode #holder {
+    color: #b055fa;
+}
+
+html.dark-mode .subtitulo {
+    color: #b055fa;
+}
+
+html.dark-mode a {
+    color: #d59def;
+}
+
+html.dark-mode a:hover {
+    color: #b055fa;
 }
 
 /* Idiomas Section - Light Mode */
