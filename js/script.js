@@ -1,13 +1,16 @@
-/* 1. MODO OSCURO / CLARO
+// 1. MODO OSCURO / CLARO
 
 // Configuración inicial de la clase de tema antes de renderizar
 const savedTheme = localStorage.getItem('theme');
 if (savedTheme === 'dark') {
     document.documentElement.className = 'dark-mode'; // Configura dark-mode inmediatamente
 }
-
+window.onload = function () {
+    claroOscuro();
+    writeText();
+}
 // Esperar a que cargue la página para inicializar el evento de alternancia y la imagen
-window.onload = function() {
+function claroOscuro() {
     const modeIcon = document.getElementById('mode-toggle');
 
     // Establecer la imagen correcta según el tema almacenado
@@ -29,8 +32,8 @@ window.onload = function() {
             localStorage.setItem('theme', 'dark');
         }
     });
-}; */
-// Obtener el tema guardado en el almacenamiento local
+}
+/* Obtener el tema guardado en el almacenamiento local
 const savedTheme = localStorage.getItem('theme');
 
 // Aplicar el tema si es dark
@@ -63,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
             localStorage.setItem('theme', 'dark');
         }
     });
-});
+}); */
 
 
 
@@ -72,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Función para animar el texto
 function writeText() {
     const title = "Victor Teleanu";
-    const text = "FRONT-END DEVELOPER";
+    const text = "FULL STACK DEVELOPER";
     const titleElement = document.getElementById('title');
     const holder = document.getElementById('holder');
 
@@ -94,5 +97,3 @@ function writeText() {
 
     typeText(); // Iniciar la animación
 }
-
-window.onload = writeText;
