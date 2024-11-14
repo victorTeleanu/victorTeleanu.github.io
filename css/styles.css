@@ -91,14 +91,14 @@ html.dark-mode a:hover {
     flex-direction: row;
 }
 
-.GitHub, .Linkedin, .home {
+.GitHub, .Linkedin  {
     margin-right: 10px;
     width: 40px;
     height: auto;
     border-radius: 50%;
 }
 
-.mode-icon {
+.mode-icon, .home{
     margin-right: 10px;
     width: 40px;
     height: 40px;
@@ -203,10 +203,19 @@ html.dark-mode a:hover {
 /* Idiomas Section - Light Mode */
 .idiomas {
     font-size: larger;
-    color: black;
 }
 
-/* Idiomas Section - Dark Mode */
-html.dark-mode .idiomas {
-    color: white;
+#reloj {
+    top: 10px;              /* Espacio desde la parte superior */
+    left: 10px;             /* Espacio desde la parte izquierda */
+    font-size: 1.5rem;      /* Tamaño de fuente ajustable */
+    font-weight: bold;
+    color: #0056b3;         /* Color del texto */
+    padding: 5px 10px;      /* Espaciado interno */
+    z-index: 1000;          /* Asegura que esté sobre otros elementos */
+}
+
+/* Estilos en modo oscuro */
+html.dark-mode #reloj {
+    color: #b055fa;         /* Color morado para el modo oscuro */
 }

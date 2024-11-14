@@ -8,27 +8,32 @@
         <title>Victor Teleanu - Mas Sobre Mi</title>
     </head>
     <body>
-        <header>
-            <div class="intro">
+    <header>
+        <div class="intro">
+            <div id="reloj"></div>
+            <!-- Imagen de perfil en la parte superior -->
+            <div class="pfp-container">
                 <img class="pfp" src="files/yo.jpg" alt="Victor">
-                <div class="text-container">
-                    <h1>Victor Teleanu</h1>
-                    <p class="subtitulo">Desarrollador Web</p>
-                </div>
             </div>
-            <div class="contenedor-imagenes">
-                <img id="mode-toggle" src="files/modo_claro.jpg" alt="Toggle Dark Mode" class="mode-icon">
-                <a href="https://github.com/victorTeleanu" target="_blank">
-                    <img class="GitHub" src="files/github.png" alt="GitHub">
-                </a>
-                <a href="https://www.linkedin.com/in/victor-teleanu-5412602a9/" target="_blank">
-                    <img class="Linkedin" src="files/linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="index.html">
-                    <img class="home" src="files/home.png" alt="Inicio">
-                </a>
+            <div class="text-container">
+                <h1 id="title"></h1> <!-- Título -->
+                <div id="holder"></div> <!-- Este es el lugar donde aparecerá el texto animado -->
             </div>
-        </header>
+        </div>
+        <div class="contenedor-imagenes">
+            <!-- Imagen para cambiar entre modos -->
+            <img id="mode-toggle" src="files/modo_claro.jpg" alt="Toggle Dark Mode" class="mode-icon">
+            <a href="https://github.com/victorTeleanu" target="_blank">
+                <img class="GitHub" src="files/github.png" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/victor-teleanu-5412602a9/" target="_blank">
+                <img class="Linkedin" src="files/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="index.html">
+                <img id="home-toggle" class="home" src="files/home_claro.png" alt="Inicio">
+            </a>
+        </div>
+    </header>
 
         <section>
             <div class="contenedor">
