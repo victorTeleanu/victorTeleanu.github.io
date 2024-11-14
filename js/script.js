@@ -131,10 +131,12 @@ function crearTooltips() {
 
             element.addEventListener('mouseover', () => {
                 tooltip.style.visibility = 'visible';
+                tooltip.style.opacity = '1';
             });
 
             element.addEventListener('mouseout', () => {
                 tooltip.style.visibility = 'hidden';
+                tooltip.style.opacity = '0';
             });
         }
     });
