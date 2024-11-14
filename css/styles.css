@@ -4,7 +4,6 @@ html {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-/* Global Styles - Light Mode (Default) */
 body {
     margin: 0;
     padding: 0;
@@ -12,13 +11,11 @@ body {
     font-size: large;
 }
 
-/* Container */
 .contenedor {
     width: 80%;
     margin: auto;
 }
 
-/* Header and Footer - Light Mode */
 header, footer {
     color: #000000;
     text-align: center;
@@ -31,18 +28,11 @@ footer {
     margin-top: auto;
 }
 
-/* Headings - Light Mode */
-h1, h2, .subtitulo {
+h1, h2 {
     font-size: 30px;
-    color: #0056b3; /* Azul para títulos y subtítulos en modo claro */
+    color: #0056b3;
 }
 
-.subtitulo {
-    font-weight: bold;
-    color: #0056b3; /* Azul para subtítulos en modo claro */
-}
-
-/* Dark Mode Styles */
 html.dark-mode {
     background-color: #000000;
     color: #ffffff;
@@ -52,18 +42,15 @@ html.dark-mode footer {
     color: #ffffff;
 }
 
-/* Headings - Dark Mode */
-html.dark-mode h1, html.dark-mode h2, html.dark-mode .subtitulo {
-    color: #b055fa; /* Morado para títulos y subtítulos en modo oscuro */
+html.dark-mode h1, html.dark-mode h2 {
+    color: #b055fa;
 }
 
-/* Section */
 section {
     padding: 40px 0;
     text-align: justify;
 }
 
-/* Links - Light Mode */
 a {
     color: #0056b3;
     text-decoration: none;
@@ -73,7 +60,6 @@ a:hover {
     color: #6c93ba;
 }
 
-/* Links - Dark Mode */
 html.dark-mode a {
     color: #d59def;
 }
@@ -82,7 +68,6 @@ html.dark-mode a:hover {
     color: #b055fa;
 }
 
-/* Social Media Icons */
 .contenedor-imagenes {
     position: fixed;
     top: 10px;
@@ -91,7 +76,7 @@ html.dark-mode a:hover {
     flex-direction: row;
 }
 
-.GitHub, .Linkedin  {
+#gitHub, #linkedin  {
     margin-right: 10px;
     width: 40px;
     height: auto;
@@ -108,10 +93,9 @@ html.dark-mode a:hover {
     transition: transform 0.3s ease;
 }
 
-/* Intro Section */
 .intro {
     display: flex;
-    flex-direction: column; /* Cambiado para alinear imagen y texto verticalmente */
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -119,7 +103,7 @@ html.dark-mode a:hover {
 }
 
 .pfp-container {
-    margin-bottom: 20px; /* Espacio entre la imagen y el texto */
+    margin-bottom: 20px;
 }
 
 .pfp {
@@ -128,7 +112,6 @@ html.dark-mode a:hover {
     border-radius: 50%;
 }
 
-/* Text Container */
 .text-container {
     display: flex;
     flex-direction: column;
@@ -137,19 +120,17 @@ html.dark-mode a:hover {
 }
 
 #title {
-    font-size: 36px; /* Estilo del título */
+    font-size: 36px;
 }
 
-/* Typing Animation */
 #holder {
     color: #0056b3;
     font-size: 2rem;
     font-weight: bold;
     white-space: nowrap;
     overflow: hidden;
-    /*border-right: 3px solid #0056b3;*/
     width: 0;
-    animation: typing 3s steps(30) 1s forwards/*, blink-caret 0.75s step-end infinite*/;
+    animation: typing 3s steps(30) 1s forwards;
 }
 
 @keyframes typing {
@@ -167,13 +148,6 @@ html.dark-mode a:hover {
     }
 }
 
-/* Subtitle */
-.subtitulo {
-    font-weight: bold;
-    color: #0056b3;
-}
-
-/* Links */
 a {
     color: #0056b3;
     text-decoration: none;
@@ -183,7 +157,6 @@ a:hover {
     color: #6c93ba;
 }
 
-/* Dark Mode Styles */
 html.dark-mode #holder {
     color: #b055fa;
 }
@@ -200,22 +173,39 @@ html.dark-mode a:hover {
     color: #b055fa;
 }
 
-/* Idiomas Section - Light Mode */
 .idiomas {
     font-size: larger;
 }
 
 #reloj {
-    top: 10px;              /* Espacio desde la parte superior */
-    left: 10px;             /* Espacio desde la parte izquierda */
-    font-size: 1.5rem;      /* Tamaño de fuente ajustable */
+    top: 10px;
+    left: 10px;
+    font-size: 1.5rem;
     font-weight: bold;
-    color: #0056b3;         /* Color del texto */
-    padding: 5px 10px;      /* Espaciado interno */
-    z-index: 1000;          /* Asegura que esté sobre otros elementos */
+    color: #0056b3;
+    padding: 5px 10px;
+    z-index: 1000;
 }
 
-/* Estilos en modo oscuro */
 html.dark-mode #reloj {
-    color: #b055fa;         /* Color morado para el modo oscuro */
+    color: #b055fa;
 }
+
+.tooltip-text {
+    visibility: hidden;
+    position: absolute;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 10px;
+    transition: opacity 0.3s, visibility 0.3s;
+    background-color: #333333;
+    color: white;
+}
+
+#estudios:hover .tooltip-text,
+#masSobreMi:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+

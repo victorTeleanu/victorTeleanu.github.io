@@ -1,9 +1,10 @@
-// CARGAR FUNCIONES
+// 0. CARGAR FUNCIONES
 
 window.onload = function () {
     claroOscuro();
     writeText();
     actualizarReloj();
+    crearTooltips();
 }
 
 // 1. MODO OSCURO / CLARO
@@ -96,21 +97,45 @@ function writeText() {
 
 // 3. RELOJ
 
-// Función para actualizar el reloj
 function actualizarReloj() {
     const fechaHora = new Date();
     let horas = fechaHora.getHours();
     let minutos = fechaHora.getMinutes();
     let segundos = fechaHora.getSeconds();
 
-    // Aseguramos que cada unidad de tiempo tenga dos dígitos
     if (horas < 10) { horas = '0' + horas; }
     if (minutos < 10) { minutos = '0' + minutos; }
     if (segundos < 10) { segundos = '0' + segundos; }
 
-    // Mostramos la hora actualizada en el elemento con ID "reloj"
     document.getElementById("reloj").innerHTML = `${horas}:${minutos}:${segundos}`;
 }
 
-// Llama a la función cada segundo para actualizar el reloj en tiempo real
 setInterval(actualizarReloj, 1000);
+
+// 4. TOOLTIP
+
+function crearTooltips() {
+    const tooltipsData = [
+        { id: 'estudios', text: 'Haz clic para ver más sobre mis estudios.' },
+        { id: 'masSobreMi', text: 'Haz clic para saber más sobre mí.' },
+    ];
+
+    tooltipsData.forEach(data => {
+        const element = document.getElementById(data.id);
+        if (element) {
+            const tooltip = document.createElement('span');
+            tooltip.className = 'tooltip-text';
+            tooltip.textContent = data.text;
+
+            element.appendChild(tooltip);
+
+            element.addEventListener('mouseover', () => {
+                tooltip.style.visibility = 'visible';
+            });
+
+            element.addEventListener('mouseout', () => {
+                tooltip.style.visibility = 'hidden';
+            });
+        }
+    });
+}
