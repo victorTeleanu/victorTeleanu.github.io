@@ -16,7 +16,6 @@ if (savedTheme === 'dark') {
 function claroOscuro() {
     const modeIcon = document.getElementById('mode-toggle');
     const homeIcon = document.getElementById('home-toggle');
-    console.log(homeIcon);
     if (savedTheme === 'dark') {
         modeIcon.src = 'files/modo_claro.jpg';
         homeIcon.src = 'files/home_claro.png';
@@ -39,36 +38,6 @@ function claroOscuro() {
         }
     });
 }
-/*const savedTheme = localStorage.getItem('theme');
-
-if (savedTheme === 'dark') {
-    document.documentElement.classList.add('dark-mode');
-}
-document.addEventListener('DOMContentLoaded', function() {
-
-    // Obtener el ícono para el cambio de modo
-    const modeIcon = document.getElementById('mode-toggle');
-    if (savedTheme === 'dark') {
-        modeIcon.src = 'files/modo_oscuro.jpg';
-    } else {
-        modeIcon.src = 'files/modo_claro.jpg';
-    }
-
-    // Cambiar entre modo oscuro y claro al hacer clic
-    modeIcon.addEventListener('click', function() {
-        const isDark = document.documentElement.classList.contains('dark-mode');
-
-        if (isDark) {
-            document.documentElement.classList.remove('dark-mode');
-            modeIcon.src = 'files/modo_claro.jpg';
-            localStorage.setItem('theme', 'light');
-        } else {
-            document.documentElement.classList.add('dark-mode');
-            modeIcon.src = 'files/modo_oscuro.jpg';
-            localStorage.setItem('theme', 'dark');
-        }
-    });
-}); */
 
 // 2. ANIMACIÓN DE TIPEO
 
@@ -117,7 +86,7 @@ setInterval(actualizarReloj, 1000);
 function crearTooltips() {
     const tooltipsData = [
         { id: 'estudios', text: 'Haz clic para ver más sobre mis estudios.' },
-        { id: 'masSobreMi', text: 'Haz clic para saber más sobre mí.' },
+        { id: 'masSobreMi', text: 'Haz clic para saber más sobre mí.' }
     ];
 
     tooltipsData.forEach(data => {
